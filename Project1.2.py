@@ -80,8 +80,8 @@ def mask():
     # #BEEP
     #pip install pygame
 
-    mixer.init()
-    sound= mixer.Sound(r'Beep Beep.mp3')
+    #mixer.init()
+    #sound= mixer.Sound(r'Beep Beep.mp3')
 
 
 
@@ -136,7 +136,7 @@ def mask():
                     
                     status = "No Mask"
                     
-                    sound.play()
+                    #sound.play()
                     
 
                     x1,y1,w1,h1 = 0,0,175,75
@@ -158,7 +158,7 @@ def mask():
                     
                     status = "Face Mask"
                     
-                    sound.stop()
+                    #sound.stop()
 
                     x1,y1,w1,h1 = 0,0,175,75
                     # Draw black background rectangle
