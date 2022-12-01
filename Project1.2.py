@@ -81,7 +81,7 @@ def mask():
     #pip install pygame
 
     mixer.init()
-    sound= mixer.Sound(r'.\Beep Beep.mp3')
+    sound= mixer.Sound(r'Beep Beep.mp3')
 
 
 
