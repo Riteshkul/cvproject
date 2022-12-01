@@ -170,7 +170,7 @@ def mask():
                 
                 
                 
-        st.image(img)
+        cv2.imshow('Result',img)
         #27- ASCII of Escape
         if cv2.waitKey(2) == 27:
             break
