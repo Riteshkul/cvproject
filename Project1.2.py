@@ -9,6 +9,12 @@ from PIL import Image
 import numpy as np
 import json
 from streamlit_lottie import st_lottie
+from pygame import mixer
+from sklearn.svm import SVC
+from sklearn.metrics import accuracy_score
+from sklearn.model_selection import train_test_split
+from sklearn.decomposition import PCA
+
 
 
 with_mask=np.load('with_mask.npy')
@@ -43,30 +49,7 @@ def load_lottiefile(filepath: str):
 
 def mask():
 
-
-
-    #SVM - Support Vector Machine
-    #SVC - Support Vector Classification
-    from sklearn.svm import SVC
-    from sklearn.metrics import accuracy_score
-
-
-    from sklearn.model_selection import train_test_split
-
-
-
-
-
     x_train, x_test, y_train, y_test = train_test_split(X,labels,test_size = 0.25)
-
-
-
-
-
-
-    #PCA - Principal Component Analysis
-    from sklearn.decomposition import PCA
-
 
 
     pca = PCA(n_components = 3)
@@ -96,7 +79,7 @@ def mask():
 
     # #BEEP
     #pip install pygame
-    from pygame import mixer
+
     mixer.init()
     sound= mixer.Sound(r'.\Beep Beep.mp3')
 
