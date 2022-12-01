@@ -98,7 +98,7 @@ def mask():
     #pip install pygame
     from pygame import mixer
     mixer.init()
-    sound= mixer.Sound(r'E:\cv project\Project\Beep Beep.mp3')
+    sound= mixer.Sound(r'.\Beep Beep.mp3')
 
 
 
