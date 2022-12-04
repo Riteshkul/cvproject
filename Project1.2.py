@@ -16,7 +16,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.decomposition import PCA
 
 
-
+@st.cache(allow_output_mutation=true)
 with_mask=np.load('with_mask.npy')
 without_mask=np.load('without_mask.npy')
 
