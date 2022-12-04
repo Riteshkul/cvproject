@@ -114,6 +114,7 @@ def mask():
 
     haar_data=cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
     capture=cv2.VideoCapture(0)
+    frameST=st.empty()
     data = []
     while True:
         flag,img=capture.read()
@@ -170,7 +171,8 @@ def mask():
                 
                 
                 
-        cv2.imshow('Result',img)
+        frameST.image(img,channels="BGR")
+        #cv2.imshow('Result',img)
         #27- ASCII of Escape
         if cv2.waitKey(2) == 27:
             break
