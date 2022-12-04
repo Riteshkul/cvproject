@@ -171,7 +171,7 @@ def mask():
                 
                 
                 
-        frameST.image(img,channels="BGR")
+        frameST.image(img)
         #cv2.imshow('Result',img)
         #27- ASCII of Escape
         if cv2.waitKey(2) == 27:
